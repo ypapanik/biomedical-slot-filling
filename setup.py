@@ -1,0 +1,31 @@
+from setuptools import find_packages, setup
+
+setup(
+    name="biomedical_slot_filling",
+    version="0.1",
+    packages=find_packages(),
+    install_requires=[
+        "cython",
+"faiss-cpu>=1.6.1",
+"filelock",
+"numpy",
+"regex",
+"torch>=1.5.0",
+"transformers==4.6.1",
+"tqdm>=4.27",
+"wget",
+"google-cloud-bigquery==2.4.0",
+"google-cloud-storage==1.33.0",
+"jsonlines",
+"pandas",
+"nltk",
+"attrs",
+"tensorboard",
+"pyserini",
+"apex",
+"ujson",
+"gdown",
+    ],
+    include_package_data=True,
+    description="Biomedical Slot Filling",
+)
